@@ -1,27 +1,27 @@
-false && true || true //
+false && true || true //true - false и true это false, false или true это true
 
-false && (true || true);
+false && (true || true);  // false - true и true в скобках будет true, false и true слева будет false
 
-+'40' + +'2';
++'40' + +'2';  //42 - знак + перед текстом превращает его в число 40+2=42
 
-'2' + 3 ** 2;
+'2' + 3 ** 2;  // 29 - 3 в квадрате 9, текст 2 + число 9 дают текст 29
 
-3 ** 2 / 3;
+3 ** 2 / 3;  //3 - 3 в квадрате = 9, 9/3=3
 
-3 ** (9 / 3);
+3 ** (9 / 3);  // 27 - 9/3=3 3 в кубе = 27
 
-'10' + (5 === 6);
+'10' + (5 === 6);  //10false -  5 не равно строго шести это false, текст 10 и false дают текст
 
-'10' - 5 === 6;
+'10' - 5 === 6;  // false - левая часть это текст, он не равен строго числу
 
-undefined + 1; 
+undefined + 1;   //NaN - неопределенность и число это не число
 
-(+null == false) < 1;
+(+null == false) < 1;  //false - +null не строго равно false это false, false меньше единицы это false
 
-(+null == false) < 1 ** 5;
+(+null == false) < 1 ** 5;  //false - +null не строго равно false это false, false меньше единицы в пятой степени (1) это false
 
 
 var number = 5;
 2 * ++number; 
 2 * number--; 
-console.log(number);
+console.log(number);  //5 - вторая и третья строчка не имеют значения так как не присвоены к переменной
